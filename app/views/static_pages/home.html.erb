@@ -1,0 +1,149 @@
+<div class="home">
+
+  <div class="home-intro">
+    <div class="home-intro__left">
+      <h1 class="typewriter-container">
+        Dégustez nos délicieux microgreens <br/>100%
+        <span
+          class="typewriter"
+          data-type='["gourmands", "frais", "vitaminés", "sains"]'
+        >
+          <span class="wrapper"></span>
+        </span>
+      </h1>
+      <h2>L'alternative au snacking au goût subtile et intense</h2>
+      <p><i class="fas fa-check-circle"></i> Bourrés de nutriments concentrés, vitamines, minéraux et enzymes </p>
+      <p><i class="fas fa-check-circle"></i> Sans engrais ni pesticides</p>
+      <p><i class="fas fa-check-circle"></i> Cultivés localement à partir d'une agriculture moderne et durable</p>
+      <p><i class="fas fa-check-circle"></i> Livrés directement chez vous <span class="bolder">au top de leur fraicheur !</span></p>
+      <div class="home-buttons">  
+        <%= link_to "Commander nos déclicieux microgreens 🌿", "#", class: "btn big-btn primary" %>
+        <%= link_to "En savoir plus", "#benefits-1", class: "btn outline-btn big-btn" %>
+      </div>
+    </div>
+    <div class="home-intro__right">
+      <%= image_tag 'hero.svg' %>
+    </div>
+  </div>
+
+  <section class="benefits-section" id='benefits-1'>
+    <h2 class="benefits-section__title primary">
+      Bons pour votre santé et vos papilles
+    </h2>
+    <h3 class="benefits-section__subtitle bolder text-center">
+      ​Nos microgreens de légumes et céréales sont récoltés à leur stade le plus nutritif et savoureux
+    </h3>
+    <div class="benefits-section__body">
+      <div class="item">
+        <%= image_tag 'calendar.svg' %>
+        <p class="item__title">""""""""""""""""""""""""</p>
+        <p class="item__content">
+          """""""""""""""""""""""""""""""""""""""""""""""""""""
+        </p>
+      </div>
+
+      <div class="item">
+        <%= image_tag 'timeline.svg' %>
+        <p class="item__title">""""""""""""""""""""""""</p>
+        <p class="item__content">
+          """""""""""""""""""""""""""""""""""""""""""""""""""""
+        </p>
+      </div>
+
+      <div class="item">
+        <%= image_tag 'alarm_clock.svg' %>
+        <p class="item__title">""""""""""""""""""""""""</p>
+        <p class="item__content">
+          """""""""""""""""""""""""""""""""""""""""""""""""""""
+        </p>
+      </div>
+
+    </div>
+
+    <div class="text-center mb4">
+      <%= link_to "Commander nos déclicieux microgreens 🌿", "#", class: "btn big-btn bg-primary white-btn" %>
+    </div>
+
+  </section>
+
+  <section class="benefits-section benefits-section--white">
+    <h2 class="benefits-section__title">
+      Une culture locale, durable et moderne
+    </h2>
+    <h3 class="benefits-section__subtitle bolder text-center">
+        Nos produits sont issus d'une ferme urbaine spécialisée dans l'agriculture verticale
+    </h3>
+    <div class="benefits-section__body" id='benefits-2'>
+      <div class="item">
+        <%= image_tag 'import.svg' %>
+        <p class="item__title">""""""""""""""""""""""""</p>
+        <p class="item__content">
+          """""""""""""""""""""""""""""""""""""""""""""""""""""
+        </p>
+      </div>
+
+      <div class="item">
+        <%= image_tag 'inspection.svg' %>
+        <p class="item__title">""""""""""""""""""""""""</p>
+        <p class="item__content">
+          """""""""""""""""""""""""""""""""""""""""""""""""""""
+        </p>
+      </div>
+
+      <div class="item">
+        <%= image_tag 'refresh.svg' %>
+        <p class="item__title">""""""""""""""""""""""""</p>
+        <p class="item__content">
+          """""""""""""""""""""""""""""""""""""""""""""""""""""
+        </p>
+      </div>
+    </div>
+
+    <div class="text-center mb4">
+      <%= link_to "Découvrir notre raison d'être", "#", class: "btn big-btn bg-primary white-btn" %>
+    </div>
+  </section>
+
+    <section class="benefits-section" id='benefits-1'>
+    <h2 class="benefits-section__title primary">
+      Vous êtes distributeur ou restaurateur ?
+    </h2>
+    <h3 class="benefits-section__subtitle bolder text-center">
+      Nous proposons une offre sur-mesure pour répondre à vos besoins
+    </h3>
+    <div class="benefits-section__body">
+      <div class="item">
+        <%= image_tag 'calendar.svg' %>
+        <p class="item__title">""""""""""""""""""""""""</p>
+        <p class="item__content">
+          """""""""""""""""""""""""""""""""""""""""""""""""""""
+        </p>
+      </div>
+
+      <div class="item">
+        <%= image_tag 'timeline.svg' %>
+        <p class="item__title">""""""""""""""""""""""""</p>
+        <p class="item__content">
+          """""""""""""""""""""""""""""""""""""""""""""""""""""
+        </p>
+      </div>
+
+      <div class="item">
+        <%= image_tag 'alarm_clock.svg' %>
+        <p class="item__title">""""""""""""""""""""""""</p>
+        <p class="item__content">
+          """""""""""""""""""""""""""""""""""""""""""""""""""""
+        </p>
+      </div>
+
+    </div>
+
+    <div class="text-center mb4">
+      <%= link_to "Nous contacter", "#", class: "btn big-btn bg-primary white-btn" %>
+    </div>
+
+  </section>
+
+</div>
+
+<%= javascript_include_tag 'typewriter.js' %>

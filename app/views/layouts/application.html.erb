@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Littlegreens</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+
+    <script src="https://kit.fontawesome.com/8e2a5370b3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+    <%= javascript_include_tag "activestorage" %>
+  </head>
+
+  <body>
+    <noscript> <meta HTTP-EQUIV="Refresh" CONTENT="0;URL=/no_js.html"> </noscript>
+
+    <%= render 'layouts/navbar' %>
+    <%= render 'layouts/flash' %>
+
+    <main>
+      <%= yield %>
+    </main>
+
+    <%= render 'layouts/footer' %>
+
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<header>
+  <nav class='navbar'>
+    <%= link_to root_path, class: 'navbar__brand' do %>
+      <div class='logo'></div>
+      <h1 class='title'>LittleGreens</h1>
+    <% end %>
+    <div class='navbar__items'>
+      <%= link_to 'Commander', "#", class: 'item item-active' %>
+      <%= link_to "Raison d'être", "#", class: 'item' %>
+      <%= link_to 'Nos produits', "#", class: 'item' %>
+      <p class="item connection-btn"> Connexion <i class="fas fa-chevron-down"></i></p>
+      <div class="navbar__items__connection__menu">
+        <%= link_to 'Se connecter', "#", class: 'item primary' %>
+        <%= link_to "S'inscrire", "#", class: 'item primary' %>
+      </div>
+    </div>
+  </nav>
+  <div class="hamburger-btn">
+    <span class='hamburger-btn__icon'></span>
+  </div>
+  <nav class='hamburger-menu'>
+    <%= link_to root_path, class: 'navbar__brand' do %>
+      <p class="text-center mt2"><span class="bolder">Bienvenue</span> ✌️</p>
+    <% end %>
+    <div class='navbar__items'>
+      <%= link_to 'Commander', "#", class: 'item' %>
+      <%= link_to "Raison d'être", "#", class: 'item' %>
+      <%= link_to 'Nos produits', "#", class: 'item' %>
+      <p class="item connection-btn"> Connexion <i class="fas fa-chevron-down"></i></p>
+      <div class="navbar__items__connection__menu">
+        <%= link_to 'Se connecter', "#", class: 'item' %>
+        <%= link_to "S'inscrire", "#", class: 'item' %>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<%= javascript_include_tag 'navbar.js' %>

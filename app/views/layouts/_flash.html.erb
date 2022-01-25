@@ -1,0 +1,9 @@
+<% flash.each do |type, msg| %>
+  <div class="alert alert-<%= type %>" role="alert">
+    <% if msg.is_a? Array%>
+      <%= msg.join("<br/>").html_safe %>
+    <% else %>
+      <%= msg %>
+    <% end %>
+  </div>
+<% end %>
